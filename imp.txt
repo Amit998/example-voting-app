@@ -1,0 +1,21 @@
+kubectl get pods,svc  
+
+
+kubectl create -f voting-app-pod.yaml
+kubectl create -f voting-app-service.yaml
+
+
+kubectl create -f new-redis-pod.yaml
+kubectl create -f radis-service.yaml
+
+
+kubectl create -f postgress-pod.yaml
+kubectl create -f postgres-service.yaml
+
+kubectl create -f worker-app-pod.yaml
+
+kubectl create -f result-app-pod.yaml
+kubectl create -f result-app-service.yaml
+
+
+minikube service voting-service --url
