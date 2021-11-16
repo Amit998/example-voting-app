@@ -19,3 +19,11 @@ kubectl create -f result-app-service.yaml
 
 
 minikube service voting-service --url
+
+
+
+kubectl create -f redis-app-deployment.yaml
+kubectl create -f postgres-deploy.yaml
+kubectl create -f result-app-deploy.yaml
+kubectl create -f voting-app-deployment.yaml
+kubectl create -f worker-app-deploy.yaml
